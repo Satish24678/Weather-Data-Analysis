@@ -25,7 +25,7 @@ dag = DAG('openweather_api_dag', default_args=default_args, schedule_interval="@
 api_endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 api_params = {
         "q": "Toronto,Canada",
-        "appid": Variable.get("5228da24e5e037be5c478ea0c0cb3e15")
+        "appid": Variable.get("api_key")
     }
 
 def extract_openweather_data(**kwargs):
